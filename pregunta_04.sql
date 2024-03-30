@@ -40,3 +40,10 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+-- La función substr() toma tres argumentos: 
+-- la cadena de entrada, la posición inicial y la longitud de la subcadena que se va a extraer.
+-- estamos extrayendo una subcadena de longitud 1, que es simplemente el primer carácter de la cadena.
+-- substr(c16, 1, 1) extrae el primer carácter de la columna c16
+SELECT K0, c16
+FROM tbl1
+WHERE substr(c16, 1, 1) = substr(K0, 1, 1);
